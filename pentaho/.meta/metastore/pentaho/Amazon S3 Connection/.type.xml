@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<data-type>
+  <name>Amazon S3 Connection</name>
+  <description>Defines the connection details for an Amazon S3 connection</description>
+</data-type>
