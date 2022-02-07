@@ -428,7 +428,7 @@
     <created_user>-</created_user>
     <created_date>2021/08/26 20:04:48.260</created_date>
     <modified_user>-</modified_user>
-    <modified_date>2021/08/26 22:32:11.953</modified_date>
+    <modified_date>2022/02/07 16:59:51.925</modified_date>
     <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
     <is_key_private>N</is_key_private>
   </info>
@@ -943,6 +943,171 @@
     <GUI>
       <xloc>1088</xloc>
       <yloc>208</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Parquet output 2 2</name>
+    <type>ParquetOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <filename>pvfs://S3/bootcamp-airflow-bruno/d_analytic_zone/dwh/subject_area/commercial/sales/dataset/${DATE_MOVEMENT}_data_dataset_sales</filename>
+    <overrideOutput>Y</overrideOutput>
+    <compression>GZIP</compression>
+    <parquetVersion>PARQUET_1</parquetVersion>
+    <enableDictionary>N</enableDictionary>
+    <dictPageSize/>
+    <rowGroupSize/>
+    <dataPageSize/>
+    <extension>parquet</extension>
+    <dateInFilename>N</dateInFilename>
+    <timeInFilename>N</timeInFilename>
+    <dateTimeFormat/>
+    <fields>
+      <field>
+        <path>calendar_year</path>
+        <name>calendar_year</name>
+        <type>5</type>
+        <precision>0</precision>
+        <scale>0</scale>
+        <nullable>Y</nullable>
+        <default/>
+      </field>
+      <field>
+        <path>calendar_quarter</path>
+        <name>calendar_quarter</name>
+        <type>5</type>
+        <precision>0</precision>
+        <scale>0</scale>
+        <nullable>Y</nullable>
+        <default/>
+      </field>
+      <field>
+        <path>calendar_month_number</path>
+        <name>calendar_month_number</name>
+        <type>5</type>
+        <precision>0</precision>
+        <scale>0</scale>
+        <nullable>Y</nullable>
+        <default/>
+      </field>
+      <field>
+        <path>calendar_month_year_txt</path>
+        <name>calendar_month_year_txt</name>
+        <type>21</type>
+        <precision>0</precision>
+        <scale>0</scale>
+        <nullable>Y</nullable>
+        <default/>
+      </field>
+      <field>
+        <path>calendar_month_year_num</path>
+        <name>calendar_month_year_num</name>
+        <type>5</type>
+        <precision>0</precision>
+        <scale>0</scale>
+        <nullable>Y</nullable>
+        <default/>
+      </field>
+      <field>
+        <path>product_code</path>
+        <name>product_code</name>
+        <type>21</type>
+        <precision>0</precision>
+        <scale>0</scale>
+        <nullable>Y</nullable>
+        <default/>
+      </field>
+      <field>
+        <path>product_name</path>
+        <name>product_name</name>
+        <type>21</type>
+        <precision>0</precision>
+        <scale>0</scale>
+        <nullable>Y</nullable>
+        <default/>
+      </field>
+      <field>
+        <path>product_line</path>
+        <name>product_line</name>
+        <type>21</type>
+        <precision>0</precision>
+        <scale>0</scale>
+        <nullable>Y</nullable>
+        <default/>
+      </field>
+      <field>
+        <path>product_vendor</path>
+        <name>product_vendor</name>
+        <type>21</type>
+        <precision>0</precision>
+        <scale>0</scale>
+        <nullable>Y</nullable>
+        <default/>
+      </field>
+      <field>
+        <path>employee_officecode</path>
+        <name>employee_officecode</name>
+        <type>5</type>
+        <precision>0</precision>
+        <scale>0</scale>
+        <nullable>Y</nullable>
+        <default/>
+      </field>
+      <field>
+        <path>status</path>
+        <name>status</name>
+        <type>21</type>
+        <precision>0</precision>
+        <scale>0</scale>
+        <nullable>Y</nullable>
+        <default/>
+      </field>
+      <field>
+        <path>port_sales</path>
+        <name>port_sales</name>
+        <type>21</type>
+        <precision>0</precision>
+        <scale>0</scale>
+        <nullable>Y</nullable>
+        <default/>
+      </field>
+      <field>
+        <path>quantityordered</path>
+        <name>quantityordered</name>
+        <type>5</type>
+        <precision>0</precision>
+        <scale>0</scale>
+        <nullable>Y</nullable>
+        <default/>
+      </field>
+      <field>
+        <path>amount</path>
+        <name>amount</name>
+        <type>3</type>
+        <precision>0</precision>
+        <scale>0</scale>
+        <nullable>Y</nullable>
+        <default/>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1264</xloc>
+      <yloc>384</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1819,7 +1984,7 @@
     <length>Characters</length>
     <add_to_result_filenames>Y</add_to_result_filenames>
     <file>
-      <name>pvfs://S3/rrgopenin-t5/c_trusted_zone/commercial/erp/orderdetails/${DATE_MOVEMENT}_data_orderdetails.csv.gz</name>
+      <name>pvfs://S3/bootcamp-airflow-bruno/c_trusted_zone/commercial/erp/orderdetails/${DATE_MOVEMENT}_data_orderdetails.csv.gz</name>
       <filemask/>
       <exclude_filemask/>
       <file_required>N</file_required>
@@ -2029,7 +2194,7 @@
     <length>Characters</length>
     <add_to_result_filenames>Y</add_to_result_filenames>
     <file>
-      <name>pvfs://S3/rrgopenin-t5/c_trusted_zone/commercial/erp/orders/${DATE_MOVEMENT}_data_orders.csv.gz</name>
+      <name>pvfs://S3/bootcamp-airflow-bruno/c_trusted_zone/commercial/erp/orders/${DATE_MOVEMENT}_data_orders.csv.gz</name>
       <filemask/>
       <exclude_filemask/>
       <file_required>N</file_required>
@@ -2224,7 +2389,7 @@
     <length>Characters</length>
     <add_to_result_filenames>Y</add_to_result_filenames>
     <file>
-      <name>pvfs://S3/rrgopenin-t5/c_trusted_zone/commercial/erp/customers/${DATE_MOVEMENT}_data_customers.csv.gz</name>
+      <name>pvfs://S3/bootcamp-airflow-bruno/c_trusted_zone/commercial/erp/customers/${DATE_MOVEMENT}_data_customers.csv.gz</name>
       <filemask/>
       <exclude_filemask/>
       <file_required>N</file_required>
@@ -2494,7 +2659,7 @@
     <length>Characters</length>
     <add_to_result_filenames>Y</add_to_result_filenames>
     <file>
-      <name>pvfs://S3/rrgopenin-t5/c_trusted_zone/commercial/erp/products/${DATE_MOVEMENT}_data_products.csv.gz</name>
+      <name>pvfs://S3/bootcamp-airflow-bruno/c_trusted_zone/commercial/erp/products/${DATE_MOVEMENT}_data_products.csv.gz</name>
       <filemask/>
       <exclude_filemask/>
       <file_required>N</file_required>
@@ -2689,7 +2854,7 @@
     <length>Characters</length>
     <add_to_result_filenames>Y</add_to_result_filenames>
     <file>
-      <name>pvfs://S3/rrgopenin-t5/c_trusted_zone/commercial/erp/employees/${DATE_MOVEMENT}_data_employees.csv.gz</name>
+      <name>pvfs://S3/bootcamp-airflow-bruno/c_trusted_zone/commercial/erp/employees/${DATE_MOVEMENT}_data_employees.csv.gz</name>
       <filemask/>
       <exclude_filemask/>
       <file_required>N</file_required>
@@ -2827,171 +2992,6 @@
     <GUI>
       <xloc>528</xloc>
       <yloc>448</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Parquet output 2 2</name>
-    <type>ParquetOutput</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <filename>pvfs://S3/rrgopenin-t5/d_analytic_zone/dwh/subject_area/commercial/sales/dataset/${DATE_MOVEMENT}_data_dataset_sales</filename>
-    <overrideOutput>Y</overrideOutput>
-    <compression>GZIP</compression>
-    <parquetVersion>PARQUET_2</parquetVersion>
-    <enableDictionary>N</enableDictionary>
-    <dictPageSize/>
-    <rowGroupSize/>
-    <dataPageSize/>
-    <extension>parquet</extension>
-    <dateInFilename>N</dateInFilename>
-    <timeInFilename>N</timeInFilename>
-    <dateTimeFormat/>
-    <fields>
-      <field>
-        <path>calendar_year</path>
-        <name>calendar_year</name>
-        <type>5</type>
-        <precision>0</precision>
-        <scale>0</scale>
-        <nullable>Y</nullable>
-        <default/>
-      </field>
-      <field>
-        <path>calendar_quarter</path>
-        <name>calendar_quarter</name>
-        <type>5</type>
-        <precision>0</precision>
-        <scale>0</scale>
-        <nullable>Y</nullable>
-        <default/>
-      </field>
-      <field>
-        <path>calendar_month_number</path>
-        <name>calendar_month_number</name>
-        <type>5</type>
-        <precision>0</precision>
-        <scale>0</scale>
-        <nullable>Y</nullable>
-        <default/>
-      </field>
-      <field>
-        <path>calendar_month_year_txt</path>
-        <name>calendar_month_year_txt</name>
-        <type>21</type>
-        <precision>0</precision>
-        <scale>0</scale>
-        <nullable>Y</nullable>
-        <default/>
-      </field>
-      <field>
-        <path>calendar_month_year_num</path>
-        <name>calendar_month_year_num</name>
-        <type>5</type>
-        <precision>0</precision>
-        <scale>0</scale>
-        <nullable>Y</nullable>
-        <default/>
-      </field>
-      <field>
-        <path>product_code</path>
-        <name>product_code</name>
-        <type>21</type>
-        <precision>0</precision>
-        <scale>0</scale>
-        <nullable>Y</nullable>
-        <default/>
-      </field>
-      <field>
-        <path>product_name</path>
-        <name>product_name</name>
-        <type>21</type>
-        <precision>0</precision>
-        <scale>0</scale>
-        <nullable>Y</nullable>
-        <default/>
-      </field>
-      <field>
-        <path>product_line</path>
-        <name>product_line</name>
-        <type>21</type>
-        <precision>0</precision>
-        <scale>0</scale>
-        <nullable>Y</nullable>
-        <default/>
-      </field>
-      <field>
-        <path>product_vendor</path>
-        <name>product_vendor</name>
-        <type>21</type>
-        <precision>0</precision>
-        <scale>0</scale>
-        <nullable>Y</nullable>
-        <default/>
-      </field>
-      <field>
-        <path>employee_officecode</path>
-        <name>employee_officecode</name>
-        <type>5</type>
-        <precision>0</precision>
-        <scale>0</scale>
-        <nullable>Y</nullable>
-        <default/>
-      </field>
-      <field>
-        <path>status</path>
-        <name>status</name>
-        <type>21</type>
-        <precision>0</precision>
-        <scale>0</scale>
-        <nullable>Y</nullable>
-        <default/>
-      </field>
-      <field>
-        <path>port_sales</path>
-        <name>port_sales</name>
-        <type>21</type>
-        <precision>0</precision>
-        <scale>0</scale>
-        <nullable>Y</nullable>
-        <default/>
-      </field>
-      <field>
-        <path>quantityordered</path>
-        <name>quantityordered</name>
-        <type>5</type>
-        <precision>0</precision>
-        <scale>0</scale>
-        <nullable>Y</nullable>
-        <default/>
-      </field>
-      <field>
-        <path>amount</path>
-        <name>amount</name>
-        <type>3</type>
-        <precision>0</precision>
-        <scale>0</scale>
-        <nullable>Y</nullable>
-        <default/>
-      </field>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>1246</xloc>
-      <yloc>385</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
