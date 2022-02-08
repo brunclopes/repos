@@ -1,0 +1,27 @@
+  <connection>
+    <name>MotorIncDWH</name>
+    <server>airflow-bootcamp.c86fxzz23rzc.us-west-2.redshift.amazonaws.com</server>
+    <type>REDSHIFT</type>
+    <access>Native</access>
+    <database>dev</database>
+    <port>5439</port>
+    <username>awsuser</username>
+    <password>Encrypted 2be98afc86aa7b096be17a77d8fcbf68e</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_REDSHIFT.loginTimeout</code><attribute>10</attribute></attribute>
+      <attribute><code>EXTRA_OPTION_REDSHIFT.tcpKeepAlive</code><attribute>true</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>5439</attribute></attribute>
+      <attribute><code>PRESERVE_RESERVED_WORD_CASE</code><attribute>Y</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+      <attribute><code>jdbcAuthMethod</code><attribute>Standard</attribute></attribute>
+    </attributes>
+  </connection>
