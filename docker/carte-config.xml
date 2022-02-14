@@ -1,0 +1,12 @@
+<slave_config>
+
+  <slaveserver>
+    <name>carte-server</name>
+    <network_interface>eth0</network_interface>
+    <port>8082</port>
+    <username>admin</username>
+    <password>password</password>
+    <master>Y</master>
+  </slaveserver>
+
+</slave_config>
