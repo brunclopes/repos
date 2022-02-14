@@ -69,7 +69,7 @@ RUN /usr/bin/wget --progress=dot:giga https://ufpr.dl.sourceforge.net/project/pe
 EXPOSE 8082
 
 COPY carte-config.xml /opt/pentaho/data-integration/pwd
-COPY AthenaJDBC42.jar /opt/pentaho/data-integration/lib
+COPY AthenaJDBC42_2.0.27.1000.jar /opt/pentaho/data-integration/lib
 COPY redshift-jdbc42-2.0.0.4.jar /opt/pentaho/data-integration/lib
 COPY execute.sh /
 RUN ["chmod", "+x", "/execute.sh"]
