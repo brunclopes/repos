@@ -25,6 +25,6 @@ dag = DAG(
 
 t1 = BashOperator(
     task_id='tsk-first-kettle-exec',
-    bash_command='/opt/repository/dags/first_dag.sh ',
+    bash_command='/opt/repos/dags/first_dag.sh ',
     dag=dag
 )
