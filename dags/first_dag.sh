@@ -1,0 +1,1 @@
+curl "http://admin:password@172.31.54.139:8082/kettle/executeJob/?rep=repo&job=carte&level=Basic"
