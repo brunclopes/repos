@@ -14,7 +14,7 @@ ENV PDI_RELEASE=9.1 \
     PDI_VERSION=9.1.0.0-324 \
     PDI_HOME=/opt/pentaho \
     KETTLE_HOME=/opt/repository \
-    PDI_REPOSITORY=/opt/repository/pentaho \
+    PDI_REPOSITORY=/opt/repos/pentaho \
     JAVA_HOME=/opt/java/openjdk
     
 RUN apt-get update && apt-get install -y \
