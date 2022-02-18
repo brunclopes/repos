@@ -7,7 +7,7 @@ local_tz=pendulum.timezone('America/Sao_Paulo')
 default_args = {
     'owner': 'airflow',
     'depends_on_past': False,
-    'start_date': datetime(2021, 9, 2, 19, tzinfo=local_tz), #Exemplo: Inicia em 2 de Setembro de 2021, a partir das 19h
+    'start_date': datetime(2022, 2, 17, 19, tzinfo=local_tz), #Exemplo: Inicia em 2 de Setembro de 2021, a partir das 19h
     'email': ['airflow@example.com'],
     'email_on_failure': False,
     'email_on_retry': False,
@@ -18,7 +18,7 @@ default_args = {
 dag = DAG(
     dag_id='dag-first-kettle-exec',
     default_args=default_args,
-    schedule_interval='*/1 * * * *', #Execute uma vez a cada 1 minutos
+    schedule_interval='*/5 * * * *', #Execute uma vez a cada 5 minutos
     catchup=False,
     tags=['docker', 'pdi', 'airflow', 'carte', 'bootcamp']
 )
